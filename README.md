@@ -186,7 +186,7 @@ Pull requests are welcome. For major changes, please open an issue first.
 ## 👨‍💻 Author
 
 * **Prethika S**
-  [GitHub](https://github.com/prethikas) • [LinkedIn](https://www.linkedin.com/in/yourprofile)
+  [GitHub](https://github.com/prethika-s) • [LinkedIn](https://www.linkedin.com/in/prethika-s)
 
 ---
 
