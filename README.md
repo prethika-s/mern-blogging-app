@@ -41,16 +41,6 @@
 
 ---
 
-## 📸 Screenshots
-
-> Replace these with actual screenshots or demos
-
-| AI Generator | Admin Dashboard | Editor |
-|--------------|-----------------|--------|
-| ![](./assets/ai-gen.png) | ![](./assets/admin.png) | ![](./assets/editor.png) |
-
----
-
 ## ⚙️ Tech Stack
 
 ### 🔧 Backend
@@ -58,7 +48,6 @@
 - **MongoDB** (with Mongoose ODM)
 - **JWT** Authentication
 - **OpenAI / Gemini API** for AI integration
-- **Cloudinary** or **S3** for media uploads
 
 ### 🎨 Frontend
 - **React.js** (Vite)
