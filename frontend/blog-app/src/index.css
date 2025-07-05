@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+/* Custom Theme Variables */
+:root {
+  --font-display: 'Urbanist', sans-serif;
+  --breakpoint-3xl: 1920px;
+  --color-primary: #00a7f3;
+}
+
+/* Base Styles */
+@layer base {
+  html {
+    font-family: var(--font-display);
+  }
+
+  body {
+    background-color: #f7fafe;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.4);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Editor Customizations */
+.w-md-editor {
+  height: 400px !important;
+}
+
+.w-md-editor-toolbar li > button {
+  height: 40px !important;
+  font-size: 24px !important;
+  color: #4a5568 !important;
+  padding: 10px !important;
+}
+
+.w-md-editor-toolbar button:hover {
+  color: #681db8 !important;
+  background-color: #e9d4ff !important;
+  border-radius: 6px;
+}
+
+.w-md-editor-toolbar button:focus {
+  outline: none !important;
+  color: #007a99 !important;
+  background-color: #d0f4ff !important;
+}
+
+/* Utility Classes Using Tailwind's @apply */
+.input-box {
+  @apply w-full flex justify-between gap-3 text-sm text-black bg-gray-50/50 rounded px-4 py-3 mb-4 mt-3 border border-gray-100 outline-none focus-within:border-sky-300;
+}
+
+.btn-primary {
+  @apply w-full flex items-center justify-center gap-3 text-sm font-semibold text-white bg-gradient-to-r from-sky-500 to-cyan-400 p-[10px] rounded-md my-1 transition-all hover:scale-[1.01] hover:text-white cursor-pointer;
+}
+
+.btn-small {
+  @apply flex items-center justify-center gap-3 bg-gradient-to-r from-sky-500 to-cyan-400 text-sm font-semibold text-white px-7 py-2 rounded-lg hover:bg-black hover:text-white transition-colors cursor-pointer hover:shadow-2xl hover:shadow-sky-200;
+}
+
+.form-card {
+  @apply bg-white rounded-xl shadow-xl shadow-gray-50 border border-gray-200/50;
+}
+
+.form-input {
+  @apply w-full text-sm text-black outline-none bg-white border border-slate-100 px-2.5 py-3 rounded-md mt-2 placeholder:text-gray-500;
+}
